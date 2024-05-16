@@ -1,0 +1,32 @@
+.mydiv {
+    background-color: aquamarine;
+    width: 25px;
+    height: 25px;
+    border-color: black;
+    border-style:solid
+
+}
+
+#container {
+ display: flex;
+ /* justify-content: center; */
+ /* flex-direction: row; */
+ /* align-items: center; */
+ /* min-height: 90vh; */
+ flex-wrap: wrap; 
+ height:496px;
+ width: 496px;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
