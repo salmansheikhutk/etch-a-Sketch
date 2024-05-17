@@ -8,9 +8,9 @@ function drawgrid(size) {
     containerhw = 31 * size + "px"
     for (let i = 0; i < grid; i += 1){
     const content = document.createElement("div");
-    content.classList.add("mydiv")
-    container.style.height = containerhw
-    container.style.width = containerhw
+    content.classList.add("mydiv");
+    content.style.width = `calc(100% / ${size})`; 
+    content.style.height = `calc(100% / ${size})`;
     container.appendChild(content)
     mouse()
     };
@@ -19,7 +19,7 @@ function drawgrid(size) {
 drawgrid(size)
 // runs all of the time: mouse over color changes
 function mouse() {
-    const boxes = document.querySelectorAll("div");
+    const boxes = document.querySelectorAll("div.mydiv");
     boxes.forEach((box) => {
         box.addEventListener("mouseover", changecolor)
         box.addEventListener("mouseleave", exitcolor)
